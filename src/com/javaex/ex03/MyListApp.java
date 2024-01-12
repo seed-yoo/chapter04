@@ -27,7 +27,6 @@ public class MyListApp {
 		cList.add(c03);
 		//cList.add(p01);	--> 출력이 불가하다
 		
-		
 		System.out.println(cList.toString());
 		
 	}
