@@ -39,5 +39,31 @@ public class Point {
 	public String toString() {
 		return "Point [x=" + x + ", y=" + y + "]";
 	}
+
+	@Override
+	public int hashCode() {
+		int result = x+y;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		boolean result;
+		
+		Point p = (Point)obj;
+		if(x == p.x && y == p.y) {
+			result = true;
+		}else {
+			result = false;
+		}
+		
+		return result;
+	}
+	
+	
+	
+	
+	
+	
 	
 }
